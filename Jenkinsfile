@@ -22,6 +22,7 @@ pipeline {
     {
       steps {
         echo "deploying the application"
+        sh "sudo nohup python3 main.py > log.txt 2>&1 &"
       }
     }
 
